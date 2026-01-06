@@ -75,5 +75,57 @@ let x = 2 * 2 + 1;
 
 alert( x ); // 5
 
+let a = 1;
+let b = 2;
 
+let c = 3 - (a = b + 1);
+
+alert( a ); // 3
+alert( c ); // 0
+
+//Asignaciones encadenadas
+let a, b, c;
+
+a = b = c = 2 + 2;
+
+alert( a ); // 4
+alert( b ); // 4
+alert( c ); // 4
+
+c = 2 + 2;
+b = c;
+a = c;
+
+// Modificar en el lugar
+let n = 2;
+n = n + 5;
+n = n * 2;
+
+let n = 2;
+n += 5; // ahora n = 7  (es lo mismo que n = n + 5)
+n *= 2; // ahora n = 14 (es lo mismo que n = n * 2)
+
+alert( n ); // 14
+
+let n = 2;
+
+n *= 3 + 5; 
+// el lado derecho es evaluado primero, es lo mismo que n *= 8
+
+alert( n ); // 16
+
+// Incremento y decremento
+// el que va pa'arriba
+let counter = 2;
+counter++;      
+// funciona igual que counter = counter + 1, pero es más corto
+alert( counter ); // 3
+
+// el que es pa'abajo
+let counter = 2;
+counter--; 
+// funciona igual que counter = counter - 1, pero es más corto
+alert( counter ); // 1
+
+// Los operadores a nivel de bit se muestran en las notas de Obsidian
 
